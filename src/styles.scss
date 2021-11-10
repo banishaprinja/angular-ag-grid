@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";
+@import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css";
+
+.row {
+  display: block;
+  width: 100%;
+  float: left;
+  height: 40px;
+}
+
+.gold {
+  color: gold;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.silver {
+  color: silver;
+  font-size: 16px;
+}
+
+.bronze {
+  color: rosybrown;
+}
+
+.age-cell {
+  width: 13% !important;
+}
+
+.id-cell {
+  width: 68px !important;
+  min-width: 68px !important;
+}
+
+.detailed-grid {
+  .ag-row {
+    border-bottom: 2px solid #a10b08 !important;
+  }
+
+  .header-row {
+    border-top: 1px solid #a10b08;
+    border-bottom: 1px solid #848689;
+    border-style: dashed;
+
+    .custom-cell {
+      font-weight: 600;
+    }
+  }
+}
+
+.header-row, .child-row {
+  .custom-cell {
+    min-width: 22.95%;
+    text-align: center;
+  }
+}
+
+.child-row {
+  margin-bottom: 10px;
+}
+
+.custom-cell {
+  padding: 0 15px;
+  float: left;
+  line-height: 40px;
+  height: 41px;
+  white-space: normal;
+  display: inline-block;
+}
+
+.col-1 {
+  width: 8.33%;
+  float: left;
+}
+
+.col-2 {
+  width: 13.65%;
+  float: left;
+}
+
+.col-3 {
+  width: 25%;
+  float: left;
+}

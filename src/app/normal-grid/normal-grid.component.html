@@ -1,0 +1,18 @@
+<h2>Normal Grid Example - Expanded Details</h2>
+<ag-grid-angular #agGrid
+                 style="width: 100%; height: 40rem;"
+                 id="myGrid"
+                 class="ag-theme-alpine detailed-grid"
+                 [columnDefs]="columnDefs"
+                 [defaultColDef]="defaultColDef"
+                 [components]="components"
+                 [rowSelection]="rowSelection"
+                 [rowModelType]="rowModelType"
+                 [pagination]="true"
+                 [paginationPageSize]="paginationPageSize"
+                 [getRowNodeId]="getRowNodeId"
+                 [rowData]="rowData"
+                 [getRowHeight]="getRowHeight"
+                 [isFullWidthCell]="isFullWidthCell"
+                 [fullWidthCellRenderer]="fullWidthCellRenderer"
+                 (gridReady)="onGridReady($event)"></ag-grid-angular>
